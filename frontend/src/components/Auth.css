@@ -1,0 +1,94 @@
+.auth-container {
+    width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-container h2 {
+    color: var(--text-primary);
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.form-group input {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 255, 102, 0.3);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.form-group input:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+    border-color: var(--neon-green);
+}
+
+.error-msg {
+    color: var(--neon-red);
+    font-size: 14px;
+    text-align: center;
+    background: rgba(255, 51, 102, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.auth-toggle {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.auth-toggle span {
+    color: var(--neon-green);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-toggle span:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 0.1em;
+    margin: 10px 0;
+    color: var(--text-secondary);
+} 
+
+.divider span { 
+    background: var(--panel-bg); 
+    padding: 0 10px; 
+}
+
+.auth-container .btn {
+    width: 100%;
+}
