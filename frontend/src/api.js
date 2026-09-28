@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://snake-game-hqcw.onrender.com';
 
 export const signup = async (username, password) => {
     const res = await fetch(`${API_URL}/auth/signup`, {
